@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Time Tracker - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Daily Time Tracker</h1>
+
+    <div id="home-screen">
+      <p>Welcome to Daily Time Tracker</p>
+      <button onclick="startWork()">Start Work</button>
+    </div>
+
+    <div id="work-screen" style="display:none;">
+      <button onclick="stopWork()">Stop Work</button>
+      <p id="status">Status: Working</p>
+
+      <!-- Module buttons open separate pages -->
+      <button onclick="goToRoutes()">Routes & Timing</button>
+      <button onclick="goToSales()">Sales & Stock</button>
+      <button onclick="goToOrders()">Orders & Payments</button>
+      <button onclick="goToQuality()">Quality Check</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
